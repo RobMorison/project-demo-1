@@ -1,24 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="site.css" />
+    <script src="index.js" defer></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Star Wars Characters</title>
-  <link rel="stylesheet" href="site.css">
-  <script src="index.js" defer></script>
-</head>
+    <!-- BOOTSTRAP 5 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
 
-<body>
-  <div>
-    <h1>Star Wars Universe Lookup</h1>
-    <label for="searchString">Who you looking for? <span class="small">(Regular expressions are cool
-        here)</span></label>
-    <input id="searchString" oninput="filterCharacters()" autocomplete="off" />
-  </div>
-  <section id="charactersList">
-  </section>
-</body>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Rubik+Doodle+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rowdies:wght@300;400;700&family=Rubik+Doodle+Shadow&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <!-- Image -->
+    <div
+      class="container-fluid d-flex align-items-center justify-content-evenly text-center"
+      id="demo-img"
+    >
+      <div class="">
+        <h1 class="rowdies-bold">STAR WARS</h1>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- Title -->
+    <div class="container demo-div-content">
+      <h3 class="demo-h3-style" style="color: black">
+        Select A Character To View
+      </h3>
+      <hr />
+    </div>
+
+    <div class="">
+      <label for="searchString"></label>
+      <input
+        id="searchString"
+        oninput="filterCharacters()"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="card bree-serif-regular border-dark text-center mb-3">
+          <section id="charactersList"></section>
+        </div>
+
+        <section id="charactersList"></section>
+      </div>
+    </div>
+  </body>
 </html>

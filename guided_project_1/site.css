@@ -36,9 +36,15 @@ input {
   font-size: 1.1em;
   line-height: 1.5em;
   border: none;
-  border-bottom: 2px solid var(--dark2);
+
   outline: none;
   margin: 5px;
+}
+
+hr {
+  color: var(--dark2);
+  border: none;
+  top: 145px;
 }
 
 label {
@@ -120,4 +126,52 @@ section#films a {
   margin: 10px;
   border-radius: 5px;
   border: 1px solid var(--dark2);
+}
+
+/*Index*/
+
+.index-div-header {
+  padding: auto;
+}
+
+.index-h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* OTHER STYLES */
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  font-style: normal;
+  color: yellow;
+}
+
+.bree-serif-regular {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-size: 25px;
+  font-style: normal;
+  color: black;
+}
+
+.demo-h3-style {
+  font-family: "Bree Serif", serif;
+  font-size: 40px;
+}
+
+/* --- CLASSES --- */
+
+.demo-div-content {
+  text-align: center;
+}
+
+/* --- IDs --- */
+
+#demo-img {
+  background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
 }
